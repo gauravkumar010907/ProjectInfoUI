@@ -1,0 +1,66 @@
+<div style="margin:10px">
+    <div style="position: relative; top: 15px; left: 53px;">
+        <div style="position: relative; top: 10px; left: 30px;">Equipment Type
+            &emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;<select required="" name="type" class="box1"
+                size="">
+                <option value="Fan">Exhaust Fan</option>
+                <option value="RU">Room Units</option>
+                <option value="UH">Unitary Heat</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div style="position: relative; top: 25px; left: 53px;">
+
+    <div style="position: relative; top: 10px; left: 40px;" class="name">Name used in
+        Spec&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input required="" name="eName" size="37" type="text">
+
+    </div> <br />
+</div>
+
+<div style="position: relative; top: 25px; left: 53px;">
+
+    <div class="tOf" style="position: relative; top: 10px; left: 40px;">Typical
+        Of&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            name="Of" required="" size="3" type="text">
+        <br />
+    </div>
+</div>
+<div style="position: relative; top: 25px; left: 125px;">
+    <button style="position: relative; top: 30px; left: -31px;" (click)="toggleForm()" class="but2">Save</button>
+</div>
+<div style="position: relative; top: 50px">
+    <div *ngIf="isFormVisible">
+        <form (ngSubmit)="submitForm()">
+            <div style="position: relative; top: 30px; left: 90px;">
+                <label
+                    for="title">Title1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div style="position: relative; top: 50px; left: 90px;">
+                <label
+                    for="title">title2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="content" name="content">
+            </div>
+            <div style="position: relative; top: 70px; left: 90px;">
+                <label
+                    for="title">Title3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div style="position: relative; top: 90px; left: 90px;">
+                <label
+                    for="title">Title4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div style="position: relative; top: 110px; left: 90px;">
+                <label
+                    for="title">Title5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="title" name="title">
+            </div>
+            <div style="position: relative; top: 65px; left: 125px;">
+                <button style="position: relative; top: 60px; left: -31px;" class="but2" type="submit">Next</button>
+            </div>
+        </form>
+    </div>
+</div>
